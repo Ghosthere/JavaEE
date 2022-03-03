@@ -8,6 +8,15 @@
         insert into t_user
         values (null, '张三', '123', '女', 23);
     </insert>
-    
-<!--    <select id=""-->
+
+    <select id="selectOne" resultType="User">
+        select * from t_user where id = 1;
+    </select>
+
+    <select id="selectAll" resultType="User">
+        select *
+        from t_user
+        where id = #{id};
+    </select>
+
 </mapper>

@@ -1,5 +1,9 @@
 package com.example.mapper;
 
+import com.example.mapper.pojo.User;
+
+import java.util.List;
+
 /**
  * @Author: zhang
  * @Discription:
@@ -8,5 +12,9 @@ package com.example.mapper;
 public interface  UserMapper {
 
     int insertUser();
+
+    User selectOne();
+
+    List<User> selectAll(Integer id);
 
 }
